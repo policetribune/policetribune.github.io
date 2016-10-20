@@ -11,7 +11,7 @@ window.onload = function() {
 
     var current = 0;
 
-    for (var x = 0; x < 12; x++) {
+    for (var x = 0; x < 20; x++) {
         images[x] = document.createElement('img');
         images[x].src = "images/gallery" + (x+1) + ".jpg";
         images[x].onclick = function() {
@@ -64,6 +64,9 @@ window.onload = function() {
     leftarrow.onclick = function() {
         if (current > 0) {
             current--;
+            modal.removeChild(modalImage);
+            modal.appendChild(modalImage);
+            modalImage.className = 'flash';
             modalImage.src = "images/gallery" + (current+1) + ".jpg";
         }
     };
@@ -71,7 +74,11 @@ window.onload = function() {
         console.log(images.length);
         if (current < images.length - 1) {
             current++;
+            modal.removeChild(modalImage);
+            modal.appendChild(modalImage);
+            modalImage.className = 'flash';
             modalImage.src = "images/gallery" + (current+1) + ".jpg";
+
         }
     };
 

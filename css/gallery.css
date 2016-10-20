@@ -69,6 +69,7 @@
     height: 100%;
     background: rgba(0,0,0,0.8);
     display: none;
+    z-index: 2;
 }
 #modal img {
     position: absolute;
@@ -76,9 +77,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1;
-	max-width: 50%;
+	width: 50%;
     max-height: 500px;
+    user-select: none;
 }
+
 
 #close {
     position: absolute;
@@ -88,6 +91,7 @@
     height: 50px;
     cursor: pointer;
 }
+
 #bar1 {
     position: absolute;
     width: 100%;
@@ -138,4 +142,13 @@
     -o-transform: translatey(-50%);
     transform: translatey(-50%);
 
+}
+
+.flash {
+    animation: flash 0.3s;
+}
+
+@keyframes flash {
+    from {filter: brightness(2)}
+    to {filter: brightness(1)}
 }
