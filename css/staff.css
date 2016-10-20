@@ -1,0 +1,28 @@
+#rect-container {
+    padding-bottom: 20px;
+}
+
+.section {
+    background: black;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 20px 0 10px 0;
+}
+
+
+.name {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    font-family: serif;
+}
+
+.position {
+    text-align: center;
+    margin: 0;
+    font-family: serif;
+    font-weight: lighter;
+}
