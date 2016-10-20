@@ -39,7 +39,7 @@
 
 @keyframes zoom-width {
 	from {width: 0}
-	to {width: 50%}
+	to {width: 700px}
 }
 
 .zoom-width {
@@ -77,7 +77,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1;
-	max-width: 50%;
+	max-width: 700px;
     max-height: 500px;
     user-select: none;
 }
