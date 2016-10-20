@@ -118,7 +118,7 @@ a {
 footer {
     width: 100%;
     background: #69b7ff;
-    padding: 20px 10px;
+    padding: 5px 10px 20px 10px;
     color: white;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -221,7 +221,7 @@ p {
     100% {transform: rotate(360deg)}
 }
 
-#inverted {
-    background: #000000;
-    color: #FFFFFF;
+hr {
+    height: 1px;
+    background: white;
 }
